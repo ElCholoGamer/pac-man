@@ -1,0 +1,11 @@
+[package]
+name = "pacman"
+description = "A cool Pac-Man emulator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+core = { path = "../core" }
+clap = { version = "3.1.8", features = ["derive"] }
+sdl2 = { version = "0.35.2", features = ["bundled", "static-link"] }
+spin_sleep = "1.1.1"
